@@ -1,0 +1,62 @@
+{% extends 'head.html' %}
+{% block title %}{{question.title|title}}{% endblock title %}
+{% block content %}
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="questionpage">
+                    <div class="row">
+                        <div class="col-4 questionheadpage">
+                            <img src="{{ question.author.avatar }}" alt="avatar">
+                            <div class="likeinput">
+                                <button class="btn btn-secondary" type="button" id="buttonlike">+</button>
+                                <p>{{ question.likes }}</p>
+                                <button class="btn btn-secondary" type="button" id="buttondislike">-</button>
+                            </div>
+                        </div>
+                        <div class="col-8 questionbodypage">
+                            <h2>{{ question.title }}</h2>
+                            <div class = "qatext">
+                                <p>{{ question.text }}</p>
+                            </div>
+                            <div class="footer">
+                                <a class="answers" href="/question/{{question.id}}">Answers({{ question.answers|length }})</a>
+                                <p>Tags: <span>
+                                    {% for tag in question.tags %}
+                                        <a class="tags" href="/tag/{{ tag }}">{{ tag }}</a>
+                                    {% endfor %}
+                                </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% for answer in question.answers %}
+                <div class="answerpage">
+                    <div class="row">
+                        <div class="col-4 answerheadpage">
+                            <img src="{{ answer.author.avatar }}" alt="avatar">
+                            <div class="likeinput">
+                                <button class="btn btn-secondary" type="button" id="buttonlike">+</button>
+                                <p>{{ answer.likes }}</p>
+                                <button class="btn btn-secondary" type="button" id="buttondislike">-</button>
+                            </div>
+                        </div>
+                        <div class="col-8 answerbodypage">
+                            <p>{{ answer.text }}</p>
+                            <span><input type="checkbox" id="checkbox" name="checkbox" value="checkbox">Correct!</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="uranswer">
+                    <label for="answerinputarea" class="form-label">Your Answer</label>
+                    <textarea class="form-control" id="answerinputarea" rows="2"></textarea>
+                    <button class="btn btn-success" type="button" id="buttonanswer">Answer</button>
+                </div>
+            </div>
+            {% include 'poptagbestmember.html' %}
+        </div>
+    </div>
+</main>
+{% endblock content %}

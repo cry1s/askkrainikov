@@ -1,0 +1,19 @@
+{% extends 'head.html' %}
+{% block title %} {{title}} {% endblock title %}
+
+{% block content %}
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>{{ h1text }}</h1>
+                {% include 'questionlist.html' %}
+                {% include 'pagination.html' %}
+            </div>
+            {% include 'poptagbestmember.html' %}
+        </div>
+    </div>
+</main>
+</body>
+</html>
+{% endblock content %}

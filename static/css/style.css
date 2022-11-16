@@ -1,0 +1,229 @@
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #252525;
+    border-radius: 10px;
+    padding: 10px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+.questionhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.questionhead img{
+    margin-bottom:20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.questionhead .likeinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.questionhead .likeinput button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.questionhead .likeinput p {
+    height: 10px;
+    width: 10px;
+}
+
+.questionbody .qatext {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.questionbody .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.questionheadpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.questionheadpage .likeinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.questionheadpage .likeinput button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.questionheadpage .likeinput p {
+    height: 10px;
+    width: 10px;
+}
+
+.questionbodypage .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.questionheadpage img{
+    margin-bottom:20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.answerpage {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #252525;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.answerpage .answerheadpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.answerpage .answerheadpage img{
+    margin-bottom:20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.answerpage .answerheadpage .likeinput{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.answerpage .answerheadpage .likeinput button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.answerpage .answerheadpage .likeinput p {
+    height: 10px;
+    width: 10px;
+}
+
+.uranswer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.uranswer textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.questionpage {
+    border-bottom: 2px solid #252525;
+    margin-bottom: 20px;
+}
+
+.uranswer {
+    border-top: 2px solid #252525;
+    margin-top: 20px;
+}
+
+.settings .settingsAvatar{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.settings .settingsAvatar img{
+    margin-bottom:20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container .logininput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container .logininput h1 {
+    margin-bottom: 20px;
+}
+
+.container .logininput span {
+    margin-bottom: 20px;
+}
+
+.login p{
+    margin-top: 10px;
+}

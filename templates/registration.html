@@ -1,0 +1,23 @@
+{% extends 'head.html' %}
+{% block title %}Sign Up{% endblock title %}
+{% block content %}
+<main class="flex-shrink-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Registration</h1>
+                <div class="settings">
+                    <p>Login:<input type="text" placeholder="Login"></p>
+                    <p>Email:<input type="text" placeholder="Email"></p>
+                    <p>Nickname:<input type="text" placeholder="Nickname"></p>
+                    <div class="settingsAvatar">
+                        <p>Avatar:<input type="file" placeholder="Avatar"></p>
+                    </div>
+                    <button class="btn btn-success" type="submit">Save</button>
+                </div>
+            </div>
+            {% include 'poptagbestmember.html' %}
+        </div>
+    </div>
+</main>
+{% endblock content %}

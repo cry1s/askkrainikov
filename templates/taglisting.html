@@ -1,0 +1,16 @@
+{% extends 'head.html' %}
+{% block title %}Tag {{ tag|title }}{% endblock %}
+{% block content %}
+    <main class="flex-shrink-0">
+        <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="Questions">Tag: <a href="/tag/{{tag}}">{{tag|title}}</a></h1>
+                {% include 'questionlist.html' %}
+                {% include 'pagination.html' %}
+            </div>
+            {% include 'poptagbestmember.html' %}
+        </div>
+        </div>
+    </main>
+{% endblock content %}

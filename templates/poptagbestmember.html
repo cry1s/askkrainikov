@@ -1,0 +1,10 @@
+<div class="col-4">
+    <h1>Popular tags</h1>
+    <span>{% for tag in poptags %}<a class="tags" href="tag/{{ tag }}">{{tag}}</a> {% endfor %}</span>
+    <h1>Best Members</h1>
+    <ul>
+        {% for user in bestmembers %}
+        <li><a href="profile.html">{{ user.username }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

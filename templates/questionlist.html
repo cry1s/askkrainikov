@@ -1,0 +1,28 @@
+<div class="qa">
+    {% for question in questions %}
+    <div class="question">
+        <div class="row">
+            <div class="col-4 questionhead">
+                <img src="{{ question.author.avatar }}" alt="avatar" class="avatar">
+                <div class="likeinput">
+                    <button class="btn btn-secondary" type="button" id="buttonlike">+</button>
+                    <p>{{ question.likes }}</p>
+                    <button class="btn btn-secondary" type="button" id="buttondislike">-</button>
+                </div>
+            </div>
+            <div class="col-8 questionbody">
+                <h2>{{ question.title }}</h2>
+                <div class = "qatext">
+                    <p>{{ question.text }}</p>
+                </div>
+                <div class="footer">
+                    <a class="answers" href="/question/{{ question.id }}">Answers({{ question.answers|length }})</a>
+                    <p>Tags: <span>
+                        {% for tag in question.tags %}<a class="tags" href="/tag/{{ tag }}">{{tag}}</a> {% endfor %}
+                    </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

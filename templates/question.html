@@ -1,0 +1,28 @@
+{% extends 'head.html' %}
+<main class="flex-shrink-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h1 class="Question">Ask Your Question</h1>
+          <div class="Form">
+            <form class="questionform">
+              <div class="mb-3 QATitle">
+                <label for="Title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="Title">
+              </div>
+              <div class="mb-3 questioninputarea">
+                <label for="questioninputarea" class="form-label">Question</label>
+                <textarea class="form-control" id="questioninputarea" rows="2"></textarea>
+              </div>
+              <div class="mb-3 tags">
+                <label for="tag" class="form-label">Tags</label>
+                <input type="text" class="form-control" id="tag">
+              </div>
+              <button type="submit" class="btn btn-success">ASK!</button>
+            </form>
+          </div>
+        </div>
+        {% include 'poptagbestmember.html' %}
+      </div>
+    </div>
+  </main>
